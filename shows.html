@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>waterworks - shows</title>
+  <style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+    <a class="logo" href="index.html"><span>waterworks</span></a>
+    <nav>
+
+      <ul class="nav_links">
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li>
+          <a href="videos.html">Videos</a>
+        </li>
+
+        <li class="active-page">
+          <a href="#">Shows</a>
+        </li>
+
+        <li>
+          <a href="music.html">Music</a>
+        </li>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+      </ul>
+
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="music.html">music</a>
+          <a class="active-menu-item" href="#">Shows</a>
+          <a href="videos.html">Videos</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!--   <th colspan="2" rowspan="4" scope="rowgroup">Tour Dates</th>-->
+
+<table class="w3-table w3-bordered w3-striped w3-border w3-hoverable"> 
+    <caption> Tour Dates </caption>
+
+    <tr>
+      <th>City</th>
+      <th>Date</th>
+      <th>Location</th>
+    </tr>
+
+    <tr>
+      <th rowspan="2" scope="rowgroup">Washington, DC</th>
+      <th>6/27/23</th>
+      <th>9:30 Club</th>
+    </tr>
+
+    <tr>
+      <th>6/28/23</th>
+      <th>Atlantis</th>
+    </tr>
+
+    <tr>
+      <th rowspan="2" scope="rowgroup">St. Louis, MO</th>
+      <th>7/18/23</th>
+      <th>The Sheldon</th>
+    </tr>
+
+    <tr>
+      <th>7/19/23</th>
+      <th>Enterprise Center</th>
+    </tr>
+
+    <tr>
+      <th rowspan="2" scope="rowgroup">Boulder, CO</th>
+      <th>7/21/23</th>
+      <th>The Sheldon</th>
+    </tr>
+    
+    <tr>
+      <th>7/22/23</th>
+      <th>Enterprise Center</th>
+    </tr>
+
+    <tr>
+      <th rowspan="2" scope="rowgroup">Boise, ID</th>
+      <th>7/25/23</th>
+      <th rowspan="2" scope="rowgroup">Egyptian Theatre</th>
+    </tr>
+    
+    <tr>
+      <th>7/26/23</th>
+
+    </tr>
+
+    </tr>
+  </table>
+
+
+
+  <footer style="width: 100%;">
+
+    <div class="footer">
+
+      <a href="http://www.spotify.com">Spotify</a>
+      <a href="https://music.apple.com/us/browse">Apple</a>
+      <a href="https://www.tidal.com">Tidal</a>
+
+    </div>
+
+  </footer>
+  
+</body>
+
+</html>

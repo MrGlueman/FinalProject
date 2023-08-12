@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>waterworks - videos</title>
+  <style>
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+  #overflow_01 {
+    background: #c6c1c1;
+    padding: 40px;
+    padding-top: 15px;
+    width: 700px;
+    max-height: 600px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: auto;
+    float: left;
+    }
+
+  #overflow_02 {
+    background: #c6c1c1;
+    padding: 40px;
+    padding-top: 15px;
+    width: 300px;
+    max-height: 600px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: auto;
+    float: left;
+    }
+
+    ul.nobullet {
+      list-style-type: none;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+    <a class="logo" href="index.html"><span>waterworks</span></a>
+    <nav>
+
+      <ul class="nav_links">
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="active-page">
+          <a href="#">Videos</a>
+        </li>
+
+        <li>
+          <a href="shows.html">Shows</a>
+        </li>
+
+        <li>
+          <a href="music.html">Music</a>
+        </li>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+      </ul>
+
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="music.html">Music</a>
+          <a href="shows.html">Shows</a>
+          <a class="active-menu-item" href="#">Videos</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="overflow_01">
+    <h3>Music Videos</h3>
+      
+      <ul class="nobullet">
+
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/i1gVxKhdGPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/EBaKmljsaIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/FiBBcHZ84i8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+ 
+      </ul>
+
+  </div>
+
+<button type="button" class="collapsible">Open Section 1</button>
+
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button type="button" class="collapsible">Open Section 2</button>
+
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+  <footer style="width: 100%;">
+
+    <div class="footer">
+
+      <a href="http://www.spotify.com">Spotify</a>
+      <a href="https://music.apple.com/us/browse">Apple</a>
+      <a href="https://www.tidal.com">Tidal</a>
+
+    </div>
+
+  </footer>
+  
+</body>
+
+</html>

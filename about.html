@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>waterworks - about</title>
+  <style>
+
+    #overflowTest {
+      background: #c6c1c1;
+      padding: 40px;
+      padding-top: 15px;
+      width: 300px;
+      max-height: 600px;
+      overflow: scroll;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      margin: auto;
+      float: right;
+    }
+
+    .mySlides {display:none;
+    }
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <header>
+    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+    <a class="logo" href="index.html"><span>waterworks</span></a>
+    <nav>
+
+      <ul class="nav_links">
+
+        <li class="active-page">
+          <a href="#">About</a>
+        </li>
+
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li>
+          <a href="videos.html">Videos</a>
+        </li>
+
+        <li>
+          <a href="shows.html">Shows</a>
+        </li>
+
+        <li>
+          <a href="music.html">Music</a>
+        </li>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+      </ul>
+
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="music.html">Music</a>
+          <a href="shows.html">Shows</a>
+          <a href="videos.html">Videos</a>
+          <a href="gallery">Gallery</a>
+          <a class="active-menu-item" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="overflowTest">
+
+    <img src="assets/images/Album_LastHome.jpg" alt="Paris" width="200" height="200">
+
+    <p class="thick">Track Listing </p>
+
+      <ol>
+
+        <li>Blued</li>
+        <li>Bad Ideas</li>
+        <li>Whattodo</li>
+        <li>Smoke Bodied</li>
+        <li>Hell Mind</li>
+        <li>Last Home</li>
+        <li>First Time</li>
+        <li>Dread</li>
+        <li>Good For You</li>
+        <li>Surrender Now</li>
+        <li>There</li>
+        
+      </ol>
+      
+      <p class="thick">UK Bonus Tracks</p>
+      
+      <ol>
+
+        <li>Wherein</li>
+        <li>You</li> 
+        <li>How in Hell</li>
+
+      </ol>
+    
+  </div>
+
+  <div class="display-container">
+    <img class="mySlides" src="assets/images/About_01.jpeg" style="width:100%">
+    <img class="mySlides" src="assets/images/About_02.jpeg" style="width:100%">
+    <img class="mySlides" src="assets/images/About_03.jpeg" style="width:100%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <footer style="width: 100%;">
+
+    <div class="footer">
+
+      <a href="http://www.spotify.com">Spotify</a>
+      <a href="https://music.apple.com/us/browse">Apple</a>
+      <a href="https://www.tidal.com">Tidal</a>
+
+    </div>
+
+  </footer>
+
+  <script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  </script>
+  
+</body>
+
+</html>
